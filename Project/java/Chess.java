@@ -5,8 +5,8 @@ public class Chess {
    public static void main(String[] args) {
       String[][] board = new String[8][8];
 
-      for (int i = 1; i <= 8; i++) {
-         for (int j = 1; j <= 8; j++) {
+      for (int i = 0; i < 8; i++) {
+         for (int j = 0; j < 8; j++) {
             if ((i % 2) != 0) {
                if ((j % 2) != 0) {
                   board[i][j] = "w";
@@ -34,12 +34,12 @@ public class Chess {
       Piece[][] pieces;
       pieces = new Piece[8][8];   
       
-      for (int p = 1; p <= 8; p++) {
+      for (int p = 0; p < 8; p++) {
          pieces[7][p] = new Piece("pawn", "white", p);
          pieces[2][p] = new Piece("pawn", "black", p);
       }
 
-      for (int r = 1; r <= 8; r += 7) {
+      for (int r = 0; r < 8; r += 7) {
          pieces[8][r] = new Piece("rook", "white", r);
          pieces[1][r] = new Piece("rook", "black", r);
       }
