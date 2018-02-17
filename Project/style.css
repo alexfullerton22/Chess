@@ -1,0 +1,17 @@
+/*style.css*/
+h1 {
+  text-align: center;
+  color: #3344ff;
+  font: 50px arial, sans-serif;
+  font-weight: bold;
+  border: 4px double gray;
+}
+body {
+    background-image: url('background.jpg');
+}
+
+.clearfix::after {
+	content: " ";
+	clear: both;
+	display: table;
+}
