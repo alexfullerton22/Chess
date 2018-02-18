@@ -16,11 +16,13 @@ public class Client {
     server.createContext("/test", new MyHandler());
     server.setExecutor(null); // creates a default executor
     server.start();
+    
+    Chess chess = new Chess();
   }
 
   static class MyHandler implements HttpHandler {
     public void handle(HttpExchange t) throws IOException {
-      byte [] response = "Welcome Real's HowTo test page".getBytes();
+      byte [] response = "chess bitch".getBytes();
       t.sendResponseHeaders(200, response.length);
       OutputStream os = t.getResponseBody();
       os.write(response);
