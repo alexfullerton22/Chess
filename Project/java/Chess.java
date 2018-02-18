@@ -26,6 +26,15 @@ public class Chess {
 
          }
       }
+      
+      Scanner scan = new Scanner(System.in);
+      System.out.println("Enter starting position of piece");
+      String start = scan.nextLine();
+      System.out.println("Enter new postion");
+      String move = scan.nextLine();
+      Input input = new Input(start, move);
+      
+      
 
    }
 
