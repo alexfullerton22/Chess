@@ -9,6 +9,9 @@ import com.sun.net.httpserver.HttpServer;
 /*
  * a simple static http server
 */
+
+import java.util.*; 
+
 public class Client {
 
   public static void main(String[] args) throws Exception {
@@ -16,13 +19,26 @@ public class Client {
     server.createContext("/test", new MyHandler());
     server.setExecutor(null); // creates a default executor
     server.start();
+
+      Scanner scan = new Scanner(System.in);
+      System.out.print("Enter Player 1 name: ");
+      String nameone = scan.nextLine();
+      Player p1 = new Player(nameone);
+      
+      System.out.print("Enter Player 2 name: ");
+      String nametwo = scan.nextLine();
+      Player p2 = new Player(nametwo);
     
     Chess chess = new Chess();
   }
 
   static class MyHandler implements HttpHandler {
     public void handle(HttpExchange t) throws IOException {
+<<<<<<< HEAD
       byte [] response = "chess".getBytes();
+=======
+      byte [] response = "".getBytes();
+>>>>>>> b906d91acfe8b3c80293932cae577d6de529d8d9
       t.sendResponseHeaders(200, response.length);
       OutputStream os = t.getResponseBody();
       os.write(response);
