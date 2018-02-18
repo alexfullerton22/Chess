@@ -1,3 +1,5 @@
+import com.sun.net.httpserver;
+
 public class Client {
    public static void main(String[] args) {
       Scanner scan = new Scanner(System.in);
@@ -8,5 +10,7 @@ public class Client {
       System.out.println("Enter Player 2 name: ");
       String nametwo = scan.nextLine();
       Player p2 = new Player(nametwo);
+      
+      
    }
 }
