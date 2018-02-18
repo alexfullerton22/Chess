@@ -34,11 +34,7 @@ public class Client {
 
   static class MyHandler implements HttpHandler {
     public void handle(HttpExchange t) throws IOException {
-<<<<<<< HEAD
       byte [] response = "chess".getBytes();
-=======
-      byte [] response = "".getBytes();
->>>>>>> b906d91acfe8b3c80293932cae577d6de529d8d9
       t.sendResponseHeaders(200, response.length);
       OutputStream os = t.getResponseBody();
       os.write(response);
