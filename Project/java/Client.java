@@ -22,7 +22,7 @@ public class Client {
 
   static class MyHandler implements HttpHandler {
     public void handle(HttpExchange t) throws IOException {
-      byte [] response = "chess bitch".getBytes();
+      byte [] response = "chess".getBytes();
       t.sendResponseHeaders(200, response.length);
       OutputStream os = t.getResponseBody();
       os.write(response);
