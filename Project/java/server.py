@@ -1,15 +1,12 @@
-import SimpleHTTPServer
-import SocketServer
-
 PORT = 8000
 
-Handler = SimpleHTTPServer.SimpleHTTPRequestHandler
+from flask import Flask
+app = Flask(__name__)
 
-httpd = SocketServer.TCPServer(("", PORT), Handler)
-
-print "serving at port", PORT
-httpd.serve_forever()
-
-
-
-
+@app.route("/")
+def hello():
+   return "Hello World"
+   
+if __name__ == "__main__":
+   app.run()
+   
