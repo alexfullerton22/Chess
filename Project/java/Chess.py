@@ -228,7 +228,6 @@ class Engine(Chess_Board):
             print ()
 
 
-    c_engine = Engine()
     c_engine.display()
     c_engine.play()
     c_engine.display()
