@@ -1,0 +1,51 @@
+.board span {
+	width: 135px;
+	height: 135px;
+	display: inline-block;
+}
+.board {
+	background-image: url(../Graphics/board.jpg);
+	width: 1080px;
+	margin: 0 auto;
+}
+.board > div {
+	height: 135px;
+}
+.board span.black.knight {
+	background-image: url(../Graphics/BlackKnight.png);
+}
+.board span.black.rook {
+	background-image: url(../Graphics/BlackRook.png);
+}
+.board span.black.bishop {
+	background-image: url(../Graphics/BlackBishop.png);
+}
+.board span.black.king {
+	background-image: url(../Graphics/BlackKing.png);
+}
+.board span.black.queen {
+	background-image: url(../Graphics/BlackQueen.png);
+}
+.board span.black.pawn {
+	background-image: url(../Graphics/BlackPawn.png);
+}
+.board span.white.knight {
+	background-image: url(../Graphics/WhiteKnight.png);
+}
+.board span.white.rook {
+	background-image: url(../Graphics/WhiteRook.png);
+}
+.board span.white.bishop {
+	background-image: url(../Graphics/WhiteBishop.png);
+}
+.board span.white.king {
+	background-image: url(../Graphics/WhiteKing.png);
+}
+.board span.white.queen {
+	background-image: url(../Graphics/WhiteQueen.png);
+}
+.board span.white.pawn {
+	background-image: url(../Graphics/WhitePawn.png);
+}
+
+
