@@ -1,7 +1,7 @@
 // one.java
 import java.util.*;
 
-public class Chess {
+public class Chess {      
    public static void main(String[] args) {
       String[][] board = new String[8][8];
 
@@ -34,14 +34,21 @@ public class Chess {
       String move = scan.nextLine();
       Input input = new Input(start, move);
       
+      String stringrow = start.substring(0, 1);
+      int srow = Integer.parseInt();
+      String scol = start.substring(1, 2);
+      
+      System.out.println(srow + " " + scol);
+      
       
 
    }
 
 ///////////////////////////////////////////////////////////////////////////////
-   public static void Setup() {
-      Piece[][] pieces;
-      pieces = new Piece[8][8];   
+   Piece[][] pieces = new Piece[8][8];   
+
+
+   public void Setup() {
       
       for (int p = 0; p < 8; p++) {
          pieces[7][p] = new Piece("pawn", "white", p);
